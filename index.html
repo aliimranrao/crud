@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Server API</title>
+</head>
+<style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+</style>
+
+<body style="text-align: center; color: white; background-color: black;">
+    <div>
+        <!-- Add User -->
+        <div style="padding-left: 10px;">
+            <h3>Add user</h3>
+            <p style="font-weight: bold; font-size: 12px;"> Name :</p>
+            <input type="text" id="name">
+            <p style="font-weight: bold; font-size: 12px;"> Email Address :</p>
+            <input type="email" id="email">
+            <p style="font-weight: bold; font-size: 12px;"> Address :</p>
+            <input type="text" id="address">
+            <br>
+            <br>
+            <button id="addUser">Add</button>
+            <p id="addUserRes"></p>
+        </div>
+
+        <!-- See All User -->
+        <div>
+            <h3>Search All User</h3>
+            <button id="searchAllUsers">Search all users</button>
+            <p id="allUserRes1"></p>
+            <p id="allUserRes2"></p>
+            <p id="allUserRes3"></p>
+            <p id="allUserRes4"></p>
+            <p id="allUserRes5"></p>
+            <p id="allUserRes6"></p>
+        </div>
+
+        <!-- See Individual User -->
+        <div>
+            <h3>Search Individual User</h3>
+            <p style="font-weight: bold; font-size: 12px;"> Enter Id :</p>
+            <input type="number" id="Id">
+            <br>
+            <br>
+            <button id="searchIndUser">Search user</button>
+            <p id="indUserRes"></p>
+        </div>
+
+        <!-- Update User -->
+        <div>
+            <h3>Update User</h3>
+
+            <!-- Name -->
+            <div>
+                <button id="updateIndUserName">Update user name</button>
+                <input type="number" id="userId1" placeholder="Enter id" style="display: none;">
+                <br>
+                <input type="text" id="updateNameFeild" placeholder="Enter name" style="display: none;">
+                <br>
+                <button id="updateName" style="display: none;">Update name</button>
+                <p id="indUserResName"></p>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <button id="updateIndUserEmail">Update user email</button>
+                <input type="number" id="userId2" placeholder="Enter id" style="display: none;">
+                <br>
+                <input type="text" id="updateEmailFeild" placeholder="Enter email" style="display: none;">
+                <br>
+                <button id="updateEmail" style="display: none;">Update Email</button>
+                <p id="indUserResEmail"></p>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <button id="updateIndUserAddress">Update user address</button>
+                <input type="number" id="userId3" placeholder="Enter id" style="display: none;">
+                <br>
+                <input type="text" id="updateAddressFeild" placeholder="Enter address" style="display: none;">
+                <br>
+                <button id="updateAddress" style="display: none;">Update Email</button>
+                <p id="indUserResAddress"></p>
+            </div>
+
+        </div>
+
+        <!-- Delete User -->
+        <div>
+            <h3>Delete Individual User</h3>
+            <p style="font-weight: bold; font-size: 12px;"> Enter Id :</p>
+            <input type="number" id="deleteId">
+            <br>
+            <br>
+            <button id="deleteIndUser">Delete user</button>
+            <p id="deleteUserRes"></p>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

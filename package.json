@@ -1,0 +1,30 @@
+{
+  "name": "server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.mjs",
+    "dev": "nodemon app.mjs parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Addyfafafa/Server-Api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Addyfafafa/Server-Api/issues"
+  },
+  "homepage": "https://github.com/Addyfafafa/Server-Api#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "parcel-bundler": "^1.12.5"
+  }
+}
